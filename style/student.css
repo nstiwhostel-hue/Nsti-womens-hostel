@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.45)
+    ),
+    url("../images/front1.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: #e91e63;
+    color: white;
+    padding: 15px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+/* Logout Button */
+header button {
+    background: white;
+    color: #e91e63;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Main */
+main {
+    min-height: 80vh;
+    padding: 40px;
+}
+
+/* Title */
+main h2 {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Students details*/
+ .room-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+table {
+    width: 600px;
+    max-width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+th {
+    background: #e91e63;
+    color: white;
+    padding: 15px;
+    font-size: 17px;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+tr:hover {
+    background: #fff0f5;
+}
+.room-container {
+    width: 100%;
+    min-height: 400px;
+}
