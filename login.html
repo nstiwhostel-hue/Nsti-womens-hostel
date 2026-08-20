@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NSTI Hostel Login</title>
+
+    <link rel="stylesheet" href="style/login.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="login-box">
+
+            <h1>NSTI(W) HOSTEL</h1>
+            <p class="subtitle">Student Login</p>
+
+            <form id="loginForm">
+
+                <label for="username">Username</label>
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Enter your username"
+                    required
+                >
+
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    required
+                >
+
+                <button type="submit">Login</button>
+
+                <p id="message"></p>
+
+            </form>
+
+            <a href="index.html" class="back">← Back to Home</a>
+
+        </div>
+
+    </div>
+
+    <script src="js/login.js"></script>
+<script>
+    
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+
+    if (username === "nstihostel" && password === "nsti@123") {
+
+        alert("Login Successful!");
+
+        window.location.href = "students.html";
+
+    } else {
+
+        document.getElementById("message").innerHTML =
+        "Incorrect Username or Password!";
+
+    }
+
+});
+</script>
+
+
+</body>
+</html>
